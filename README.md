@@ -19,7 +19,7 @@ System Requirements
 -----------
 
 Supported Operating System:
-  - Windows 7, Windows 8, Windows 8.1
+  - Windows 7, Windows 8, Windows 8.1, and seems to work with Windows 10
 
 
 Your computer must have the following minimum capabilities:
