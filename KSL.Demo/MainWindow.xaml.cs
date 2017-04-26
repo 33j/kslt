@@ -436,12 +436,19 @@
 
         private void Angle_Up(object sender, RoutedEventArgs e)
         {
+            if (KinectSensorManager.ElevationAngle < 27) {
+                KinectSensorManager.ElevationAngle++;
+            }
+
 
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (KinectSensorManager.ElevationAngle > -27)
+            {
+                KinectSensorManager.ElevationAngle--;
 
-        }
+            }
     }
 }
