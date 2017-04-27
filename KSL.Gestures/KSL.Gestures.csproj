@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classifier\Class1.cs" />
     <Compile Include="Classifier\Classifier.cs" />
     <Compile Include="Classifier\SentenceStructure.cs" />
     <Compile Include="Core\GesturesEnumTypes.cs" />

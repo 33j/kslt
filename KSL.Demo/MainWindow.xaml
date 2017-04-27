@@ -28,7 +28,7 @@
             HorizontalAlignment="Center" VerticalAlignment="Center" Width="1000" Height="80"
             TextAlignment="Center" FontSize="40" FontWeight="Bold" Foreground="#eceded" />
         </Grid>
-        <Button Content="Angle up" Width="100" Height="46" VerticalAlignment="Top" HorizontalAlignment="Right" RenderTransformOrigin="0.935,0.587" Margin="0,398,254,0" Click="CoerceElevationAngle(this, 1)" />
+        <Button Content="Angle up" Width="100" Height="46" VerticalAlignment="Top" HorizontalAlignment="Right" RenderTransformOrigin="0.935,0.587" Margin="0,398,254,0" Click="Angle_Up" />
 
         <Button Content="Angle down" Width="100" Height="46" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,444,254,0" Click="Button_Click_1" />
         <Grid Background="AliceBlue" Width="150" Height="150" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,200,10,387">
@@ -36,8 +36,10 @@
                 Text="Number of Gestures"
                 TextAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="#eceded" Background="black"
                 />
+            <!--TextInput="TextBlock_TextInput"=-->
             <TextBlock
-                Text="10"
+                Text="{Binding Path=NumOfSigns, UpdateSourceTrigger=PropertyChanged}"
+               
                 HorizontalAlignment="Center" VerticalAlignment="Center" Width="1000" Height="117"
                 TextAlignment="Center" FontSize="80" FontWeight="Bold" Foreground="#eceded" Margin="-425,23,-425,10" 
                 />

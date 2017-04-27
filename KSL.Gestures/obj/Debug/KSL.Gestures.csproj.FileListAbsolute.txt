@@ -12,3 +12,10 @@ C:\Users\33jam\Downloads\kinect-sign-language-master\kinect-sign-language-master
 C:\Users\33jam\Downloads\kinect-sign-language-master\kinect-sign-language-master\KSL.Gestures\bin\Debug\Microsoft.Kinect.xml
 C:\Users\33jam\Downloads\kinect-sign-language-master\kinect-sign-language-master\KSL.Gestures\obj\Debug\KSL.Gestures.dll
 C:\Users\33jam\Downloads\kinect-sign-language-master\kinect-sign-language-master\KSL.Gestures\obj\Debug\KSL.Gestures.pdb
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\bin\Debug\KSL.Gestures.dll
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\bin\Debug\KSL.Gestures.pdb
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\bin\Debug\Microsoft.Kinect.dll
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\bin\Debug\Microsoft.Kinect.xml
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\obj\Debug\KSL.Gestures.csprojResolveAssemblyReference.cache
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\obj\Debug\KSL.Gestures.dll
+C:\Users\33jam\Downloads\kinect-sign-language-master\KSL.Gestures\obj\Debug\KSL.Gestures.pdb

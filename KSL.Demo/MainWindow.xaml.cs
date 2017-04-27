@@ -25,7 +25,7 @@
         private GesturesController gestureController;
 
         public event PropertyChangedEventHandler PropertyChanged;
-        
+
         Classifier classifier = Classifier.getInstance;
         private Logger logger = Logger.getInstance;
 
@@ -42,13 +42,14 @@
         {
             DataContext = this;
             InitializeComponent();
+            this.NumOfSigns = "testing";
 
             startStopTimer = new Timer(2000);
             startStopTimer.Elapsed += new ElapsedEventHandler(startStopTimer_Elapsed);
 
             classifier.init();
             InitializeKinect();
-            
+
         }
 
         #endregion
@@ -310,6 +311,7 @@
         {
             switch (e.GestureName)
             {
+
                 case "Hello":
                     display(WordsEnum.Hello);
                     break;
@@ -365,7 +367,7 @@
 
         private void display(WordsEnum word)
         {
-            classifier.addCode((int) word);
+            classifier.addCode((int)word);
             string sentence = classifier.findSentence();
             List<int> sentenceBuilder = classifier.getSentenceBuilder();
 
@@ -421,7 +423,7 @@
 
                 gestureBuilder = value;
 
-                if(this.PropertyChanged != null)
+                if (this.PropertyChanged != null)
                     PropertyChanged(this, new PropertyChangedEventArgs("GestureBuilder"));
             }
         }
@@ -436,7 +438,8 @@
 
         private void Angle_Up(object sender, RoutedEventArgs e)
         {
-            if (KinectSensorManager.ElevationAngle < 27) {
+            if (KinectSensorManager.ElevationAngle < 27)
+            {
                 KinectSensorManager.ElevationAngle++;
             }
 
@@ -450,5 +453,21 @@
                 KinectSensorManager.ElevationAngle--;
 
             }
+        }
+        public String NumOfSigns
+        {
+
+            get { return NumberOfSigns.ToString(); }
+            set { SetValue(NumberOfSigns, Enum.GetNames(typeof(WordsEnum)).Length.ToString()); }
+        }
+        public static readonly DependencyProperty NumberOfSigns =
+            DependencyProperty.Register("NumOfSigns", typeof(string), typeof(MainWindow), new PropertyMetadata(string.Empty));
+
+        private void TextBlock_TextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            int pee = Enum.GetNames(typeof(WordsEnum)).Length;
+
+
+        }
     }
 }
